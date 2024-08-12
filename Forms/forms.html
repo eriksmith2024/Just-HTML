@@ -1,0 +1,258 @@
+<html>
+
+<head>
+<title>Forms with HTML</title>
+</head>
+
+<body>
+<h4>
+<a href="#item1"> Item 1</a> Username and Password <br>
+<a href="#item2"> Item 2</a> Round selectors / radio buttons<br>
+<a href="#item3"> Item 3</a> square tick boxes / checkboxes<br>
+<a href="#item4"> Item 4</a> dropdown menu <br>
+<a href="#item5"> Item 5</a> multiple selector menu <br>
+<a href="#item6"> Item 6</a> file upload button <br>
+<a href="#item7"> Item 7</a> email subscribe <br>
+<a href="#item8"> Item 8</a> age & gender select buttons <br>
+<a href="#item9"> Item 9</a> contact details <br>
+<a href="#item10"> Item 10</a> contact details with validation <br>
+<a href="#item11"> Item 11</a> date selectors <br>
+<a href="#item12"> Item 12</a> enforced email or URL entry <br>
+<a href="#item13"> Item 13</a> search bars <br>
+<a href="#item14"> Item 14</a> text in an empty search bar <br>
+
+
+
+
+
+
+</h4>
+
+<h3> Item 1 Username and Password </h3>
+
+<form id="top" action="http://www.example.com/subscribe.php" method="get"> </form>
+<p> This is where the form controls will appear.</p>
+</form>
+
+<form actio="http:www.example.com/login.php">
+<p>Username:
+	<input type="text" name="username" size="15" maxlength="100"/>
+</p>
+</form>
+<br>
+
+<form action="https://www.example.com/comments.php">
+<p>What did you think of this gig?</p>
+<textarea name="comments" cols="100" rows="4">Enter your comments...</textarea>
+<form/>
+
+<hr></hr><br>
+
+<form id="item1" "action="http://www.example.com/login.php" method="get">    <!--get is to send data like password etc-->
+<p>
+Username:<input type="text" name="username" size="15" maxlength="30"/p>
+</p>
+
+<p>
+Password:<input type="password" name="password" size="15" maxlength="30"/>
+</p>
+
+</form>
+
+<hr> </hr>
+
+<h3 id="item2"> Item 2 Round selectors / radio buttons  </h3>
+
+<form action="http://www.example.com/profile.php">    <!--get is to send data like password etc-->
+<p>Please select your favourite genre:
+<br> <!--worked using value instead of genre attribute for genre="rock" genre="pop" etc-->
+<input type="radio" name="genre" genre="rock" checked="checked"/> Rock <!-- checked makes the this button the default ticked.-->
+<input type="radio" name="genre" genre="pop"/> Pop
+<input type="radio" name="genre" genre="jazz"/> Jazz 
+<p/>
+
+<hr></hr>
+<h3 id="item3"> Item 3 Square tick boxes / checkboxes  </h3>
+
+<form action="https:www.example.com/profile.php">
+<p> Please select your favourite music services(s):
+<br>
+<input type="checkbox" name="service" value="itunes" checked="checked"/> iTunes
+<input type="checkbox" name="service" value="radio"/> Radio
+<input type="checkbox" name="service"  value="spotify"/> Spotify
+<input type="checkbox" name="service"  value="concert"/> Concert
+<input type="checkbox" name="service"  value="live pub music"/> Live Pub Music
+</p>
+
+</form>
+<h3 id="item4"> Item 4 dropdown menu  </h3>
+
+<form action="https://www.example.com/profile.php">
+  <p> What device do you listen to music on?</p>
+  <select name="devices">
+    <option value="ipod">iPod</option>
+    <option value="radio">Radio</option>
+    <option value="phone">Phone</option>
+    <option value="live_event">Live Event</option> 
+    <option value="television">Television</option>
+  </select>
+</p>
+</form>
+<hr></hr>
+
+<h3 id="item5"> Item 5 multiple selector menu  </h3>
+
+<form action="https://www.example.com/profile.php">
+  <p> Do you play any of the following musical instruments?(You can select more than one option by holding down the control on a PC or command on a Mac while selecting different options</p>
+  <select name="instruments size="7" multiple="multiple">
+    <option value="none" selected="selected">None</option>
+    <option value="guitar">Guitar</option>
+    <option value="drums">Drums</option>
+    <option value="keyboard">Keyboard</option>
+    <option value="bass">Bass</option> 
+    <option value="violin">Violin</option>
+    <option value="saxophone">Saxophone</option>
+
+  </select>
+</p>
+</form>
+<hr></hr>
+
+<h3 id="item6"> Item 6 file upload button  </h3>
+
+<form action="https://www.example.com/upload.php" method="post">
+<p>Upload your song in MP3 format:</p>
+</form>
+
+</p>
+</form>
+<form actio="http:www.example.com/login.php">
+<p>
+	<input type="text" name="username" size="15" maxlength="100"/>
+
+<input type="file" name="user-song" /> <br>
+<input type="submit" value="Upload" />
+</form>
+<hr></hr>
+
+<h3 id="item7"> Item 7 email subscribe button  </h3>
+
+<form action="http://www.example.com/subscribe.php">
+<p> Subscribe to our email list:</p>
+<input type="text" name="email" />
+<input type="submit" name="subscribe" value="Submit"/> <!--if you want subscribe on the button change submit to subscribe for value-->
+</form>
+<hr></hr>
+
+<form action="http://www.example.org/subscribe.php">
+	<p>Subscribe to our email list:</p>
+	<input type=text" name="email" />
+	<input type="image" src="images/subscribe.jpg" width="100" height="20"/>
+</form>
+
+<hr></hr>
+
+<form action="http://www.example.com/add.php">
+<button> <img=src"images/add.gif" alt="add" width="10" height="10" /> Add </button>
+<input type="hidden" name="bookmark"
+value="lyrics" />
+</form>
+<hr></hr><br>
+
+<h3 id="item8"> Item 8 age and gender select button  </h3>
+
+<label>Age: <input type="text" "name="age" /></label>
+<br> <hr></hr>
+
+Gender: <input id="female" type="radio" name="gender" value="f">
+		<label for="female">Female</label>
+	  <input id="male" type="radio" name="gender" value="m"/>
+		<label for="male">Male</label>
+<br><br><hr></hr>
+
+<h3 id="item9"> Item 9 contact details  </h3>
+
+<fieldset>
+	<legend> Contact Details </legend>
+	<label> Email: <br>
+				<input type=text name="email" /></label><br>
+	<label> Mobile: <br>
+				<input type=text" name="mobile" /> </label> <br>
+	<label>Telephone: <br>
+				<input type=~"text" name="telephone" /></label> <br>
+
+</fieldset>
+<br><br>
+
+
+<h3 id="item10"> Item 10 contact details with validation - have to enter / missing the data message </h3>
+
+<hr></hr> <!--For highlighting if part of the form is not filled in alert that it needs completing-->
+<form action="https://www.example.com/login/" method="post">
+<label for="username"> Username: </label>
+	<input type="text" name="username" required="required"/></title><br><br>
+<label for="password"> Password: </label>
+	<input type="text" name="password" required="required" /> </label>
+
+	<input type="submit" value="Submit" />
+</form>
+
+<hr></hr>
+
+
+<h3 id="item11"> Item 11 date selectors  </h3>
+<!--for where you want a date selected-->
+<form action="http://www.example.com/bookings/" method="post">
+	<label for="depart" >Departure date</label>
+	<input type="date" name="depart"/>
+	<input type="submit" value="Submit" />
+
+	<label for="returndate" >Return Date</label>
+	<input type="date" name="return"/>
+	<input type="submit" value="Submit" />
+</form>
+
+<hr></hr> <!--for where you want a email entered-->
+
+
+<h3 id="item12"> Item 12 enforced email and URL format </h3>
+<form action="http://www.example.org/subscribe.php">
+<p> Please enter your email address</p>
+<input type="text" name="email" placeholder="Your email address"/>
+<input type="submit" value="Submit" />
+</form>
+
+<hr></hr> 
+<form action="http://www.example.org/profile.php">
+<p> please enter your website address:</p>
+<input type="url" name="website"/>
+<input type="submit" value="Submit"/>
+</form>
+
+<hr></hr>
+
+
+<h3 id="item13"> Item 13 search bars  </h3>
+
+<form action=""http://www.example.org/search.php">
+<p>Search</>
+<input type="search" name="search"/>
+<input type="submit" value="Search"/>
+</form>
+
+<hr></hr>
+<h3 id="item14"> Item 14 text in empty bar  </h3>
+<form action="http//www.example.org/search.php">
+<p>Search</p>
+<input type"search" name="search" placeholder="Enter Keyword"/>
+<input type="submit" value-"Search"/>
+</form>
+
+<hr></hr>
+
+<a href="#top">return to top</a>
+
+
+
+</body
+</html>
